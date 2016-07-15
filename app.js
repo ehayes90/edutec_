@@ -8,7 +8,9 @@ app.set('view engine', 'handlebars');
 
 // Allows you to use files within the public folder
 
-app.use(express.static(process.cwd() + '/public'));
+// app.use(express.static(process.cwd() + '/public'));
+
+app.use(express.static(__dirname + '/public'));
 
 // Functions for what happens when a / is hit on server
 
