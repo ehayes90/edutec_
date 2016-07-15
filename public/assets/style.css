@@ -1,11 +1,20 @@
+h1, h2, h3, h4, h5, h6, body {
+	padding: 0;
+	margin: 0;
+}
+
+.topHeader {
+	border-bottom: 2px solid;
+}
+
+body {
+	width: 90%;
+}
+
 #h1Header{
-	/*float: block;
-    text-align: center;
-    display: block;
-    */
-   font-weight: bold;
-  text-align: center;
-  font-size: 62px;
+	font-weight: bold;
+	text-align: center;
+	font-size: 62px;
 }
 
 .jumbotron{

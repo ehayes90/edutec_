@@ -48,6 +48,14 @@ app.get('/randomparticipation', function (req, res) {
 	res.render('randomparticipation');
 });
 
+app.get('/contact', function (req, res) {
+	res.render('contact');
+});
+
+app.get('/faq', function(req, res){
+	res.render('faq');
+});
+
 // Listens to port on local server and on Heroku
 
 app.listen(process.env.PORT || 8080, function() {
