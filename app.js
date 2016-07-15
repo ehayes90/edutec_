@@ -3,7 +3,6 @@ var exphbs = require('express-handlebars');
 var path = require('path');
 
 var app = express();
-
 app.engine('handlebars', exphbs({defaultLayout: 'main'}));
 app.set('view engine', 'handlebars');
 
@@ -13,7 +12,7 @@ app.use(express.static(process.cwd() + '/public'));
 
 // Functions for what happens when a / is hit on server
 
-app.get('/', function (req, res){
+app.get('/', function (req, res) {
 	res.render('home');
 });
 
@@ -54,3 +53,7 @@ app.get('/randomparticipation', function (req, res) {
 app.listen(process.env.PORT || 8080, function() {
 	console.log("Listening on specified port..");
 });
+
+process.on('uncaughtException', function(err) {
+	console.log(err);
+})

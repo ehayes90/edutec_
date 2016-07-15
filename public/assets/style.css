@@ -1,0 +1,44 @@
+#h1Header{
+	/*float: block;
+    text-align: center;
+    display: block;
+    */
+   font-weight: bold;
+  text-align: center;
+  font-size: 62px;
+}
+
+.jumbotron{
+	background-color: red;
+	width:auto;
+	height: 300px;
+}
+
+#edutechb{
+    margin: 0 auto;
+    margin-left: auto;
+    margin-bottom:auto;
+	text-align: center;
+    display: block;
+    border-radius: 200px 200px 200px 200px;
+-moz-border-radius: 200px 200px 200px 200px;
+-webkit-border-radius: 200px 200px 200px 200px;
+border: 0px solid #000000 ;
+}
+
+#jumboh1{
+	text-align: center;	
+}
+
+#welcomeIntro{
+	text-align: center;
+}
+
+#footer1{
+	width:100%;
+	height:100px;
+	position:absolute;
+	bottom:0;
+	left:0;
+	text-align: center;
+}
