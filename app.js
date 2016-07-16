@@ -58,6 +58,10 @@ app.get('/faq', function(req, res){
 	res.render('faq');
 });
 
+app.get('/about', function(req, res){
+	res.render('about');
+});
+
 // Listens to port on local server and on Heroku
 
 app.listen(process.env.PORT || 8080, function() {
