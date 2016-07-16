@@ -1,0 +1,11 @@
+/*Used to style teachers desk*/
+
+        .forTeachers {
+            margin-top: 10px;
+            margin-bottom:10px;
+        }
+        
+        .teachersDesksTall {
+            height: 100%;
+            height: 200px;
+        }
