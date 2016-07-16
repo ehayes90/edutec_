@@ -1,0 +1,6 @@
+/*Used to manipulate container div that holds the {{{body}}} tag which is utalized by Handlebars.*/
+
+#holdBody {
+	margin-top: 20px;
+	clear: left;
+}

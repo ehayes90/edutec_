@@ -1,0 +1,11 @@
+/*Used to style section at top where the login register and logout buttons are.*/
+
+.topHeader {
+		clear: left;
+		height: 60px;
+		margin-bottom: 20px;
+		width: 100%;
+	/*	position: fixed;*/
+		top: 0px;
+		background: white;
+}

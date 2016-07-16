@@ -1,0 +1,8 @@
+/*Used to style students desk*/
+
+        .studentDesks {
+            border: 1px solid blue;
+            height: 100px;
+            margin-top: 5px;
+            margin-left:5px;
+        }
