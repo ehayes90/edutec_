@@ -34,6 +34,10 @@ $(document).ready (function() {
 		window.location.href="/about";
 	});
 
+	$("#faqs").on("click", function() {
+		window.location.href="/faq";
+	});
+
 	$("#loginButton").on("click", function(){
 		window.location.href="/register";
 	});
