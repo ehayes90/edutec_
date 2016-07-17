@@ -9,8 +9,12 @@
 }
 
 .logoOnly {
-    width: 50%;
     display: block;
     text-align: center;
-    
+}
+
+.logoImg {
+	width: 50%;
+	margin-right: auto;
+	margin-left: auto;
 }

@@ -384,15 +384,15 @@ var desks = [
 	$(".randSeat19"),
 	$(".randSeat20"),
 	$(".randSeat21"),
-	$(".randSeat21"),
 	$(".randSeat22"),
 	$(".randSeat23"),
 	$(".randSeat24"),
-	$(".randSeat24"),
+	$(".randSeat25"),
 	$(".randSeat26"),
 	$(".randSeat27"),
 	$(".randSeat28"),
-	$(".randSeat29")
+	$(".randSeat29"),
+	$(".randSeat30")
 ];
 
 $(".runRandomSeats").on('click', function() {
@@ -418,3 +418,4 @@ $(".clearRandomSeats").on("click", function(){
 
 
 });
+
