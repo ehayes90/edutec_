@@ -6,9 +6,11 @@ var app = express();
 app.engine('handlebars', exphbs({defaultLayout: 'main'}));
 app.set('view engine', 'handlebars');
 
-// Allows you to use files within the public folder
+// Calls Database Connection
 
-// app.use(express.static(process.cwd() + '/public'));
+var connection = require('./data/database/connection.js');
+
+// Allows you to use files within the public folder
 
 app.use(express.static(__dirname + '/public'));
 
@@ -70,4 +72,4 @@ app.listen(process.env.PORT || 8080, function() {
 
 process.on('uncaughtException', function(err) {
 	console.log(err);
-})
+});

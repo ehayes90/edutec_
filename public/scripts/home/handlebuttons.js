@@ -32,22 +32,38 @@ $(document).ready (function() {
 
 	$("#aboutET").on("click", function() {
 		window.location.href="/about";
+
+		return false;
 	});
 
 	$("#faqs").on("click", function() {
 		window.location.href="/faq";
+
+		return false;
 	});
 
 	$("#loginButton").on("click", function(){
 		window.location.href="/register";
+
+		return false;
 	});
 
 	$("#registerButton").on("click", function(){
 		window.location.href="/login";
+
+		return false;
 	});
 
 	$("#logoutButton").on("click", function(){
 		window.location.href="/logout";
+
+		return false;
+	});
+
+	$("#contactUs").on("click", function(){
+		window.location.href="/contact";
+
+		return false;
 	});
 
 });
