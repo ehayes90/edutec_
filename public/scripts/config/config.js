@@ -12,6 +12,8 @@ requirejs.config({
 			'../../public/scripts/bootstrap/bootstrap'
 		],
 
+		// orm: '../../../data/orm/orm',
+
 		login: '../../scripts/auth_scripts/login',
 		logout: '../../scripts/auth_scripts/logout',
 		register: '../../scripts/auth_scripts/register',

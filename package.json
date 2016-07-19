@@ -1,18 +1,14 @@
 {
-  "name": "edutec_",
+  "name": "edutech",
   "version": "1.0.0",
-  "description": "Repository used for beta testing files for Group Project #2.. This is a personal repository not the group repository.",
+  "description": "Application for Teachers",
   "main": "app.js",
   "dependencies": {
-    "browserify": "^13.0.1",
     "express": "^4.14.0",
     "express-handlebars": "^3.0.0",
     "mysql": "^2.11.1"
   },
-  "devDependencies": {
-    "jspm": "^0.16.39",
-    "webpack": "^1.13.1"
-  },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -20,7 +16,7 @@
     "type": "git",
     "url": "git+https://github.com/ehayes90/edutec_.git"
   },
-  "author": "",
+  "author": "EduTech Team",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/ehayes90/edutec_/issues"
