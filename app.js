@@ -5,7 +5,7 @@ var app = express();
 app.engine('handlebars', exphbs({defaultLayout: 'main'}));
 app.set('view engine', 'handlebars');
 
-// Calls Database Connection
+// Calls Database Connection .. For node console testing only, to be removed later.
 
 var orm = require('./data/orm/orm.js');
 
