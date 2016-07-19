@@ -55,10 +55,11 @@ $(".runRandomPart").on('click', function() {
 
 $(".clearRandomPart").on('click', function() {
 
-$('.main').empty();
-
+    location.reload();
+    //$('.main').empty();
 });
 
 });
+
 
 
