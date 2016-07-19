@@ -51,7 +51,9 @@
 </head>
 <body>
 
-<header class="row col-xs-12 col-sm-12 col-md-12 col-lg-12 topHeader">
+<!-- Header code with auth buttons. This section has been commented out because buttons have been moved to left side nav bar. This section to be removed later. -->
+
+<!-- <header class="row col-xs-12 col-sm-12 col-md-12 col-lg-12 topHeader">
 	<button class="btn btn-default" id="registerButton">
 		Register
 	</button>
@@ -63,7 +65,9 @@
 	<button class="btn btn-default" id="logoutButton">
 		Logout
 	</button>
-</header>
+</header> -->
+
+
 
 <div class="row col-xs-12 col-sm-12 col-md-12 col-lg-12 logoOnly">
 
@@ -75,11 +79,65 @@
 
 </div>
 
+
+
+<!-- Code below holds the main nav bar and body pages that are implemented through Handlebars pages. -->
+
 <div id="row col-xs-12 col-sm-12 col-md-12 col-lg-12 holdBody">
- 
-{{{ body }}}
+
+<!-- Code in div with the class leftNav is solely for buttons intended to be shown on left payne of screen inside of main van bar. -->
+
+	<div class="col-xs-12 col-sm-12 col-md-2 col-lg-2 leftNav">
+
+	<!-- 	Div for personnel image and name as displayed on Jorges test html file -->
+
+		<div class="row personnelDiv">
+
+			<!-- <img src=""> -->
+
+			<span id="personnelName"></span>
+
+		</div>
+
+		<!-- Div for authorization buttons. These buttons should be visible on homepage but hidden after login has been completed. -->
+
+		<div class="row authButtons">
+
+			<button class="btn btn-default col-xs-6 col-sm-6 col-md-12 col-lg-12" id="registerButton">
+			Register
+			</button>
+
+			<button class="btn btn-default col-xs-6 col-sm-6 col-md-12 col-lg-12" id="loginButton">
+				Login
+			</button>
+
+			<button class="btn btn-default col-xs-6 col-sm-6 col-md-12 col-lg-12" id="logoutButton">
+				Logout
+			</button>
+			
+		</div>
+
+		<div class="row navButtons">
+
+			<button id="selectRandomSeating" class="btn btn-default col-xs-6 col-sm-6 col-md-12 col-lg-12"> Random Seating </button>
+	        <button id="selectAscSeating" class="btn btn-default col-xs-6 col-sm-6 col-md-12 col-lg-12"> Ascending Seating </button>
+	        <button id="selectDescSeating" class="btn btn-default col-xs-6 col-sm-6 col-md-12 col-lg-12"> Descending Seating </button>
+	        <button id="selectRanPart" class="btn btn-default col-xs-6 col-sm-6 col-md-12 col-lg-12"> Random Participation </button>
+	        <button id="selectRanGroups" class="btn btn-default col-xs-6 col-sm-6 col-md-12 col-lg-12"> Random Groups </button>
+
+	    </div>
+		
+	</div>
+
+	<div class="col-xs-12 col-sm-12 col-md-10 col-lg-10 rightBody">
+		
+		{{{ body }}}
+
+	</div>
 
 </div>
+
+<!-- Code below is strictly for the footer of the app. -->
 
 <footer id="footer1">
 	
@@ -104,6 +162,8 @@
 	</div>
 
 </footer>
+
+<!-- End HTML -->
 
 </body>
 </html>
