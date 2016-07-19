@@ -4,8 +4,12 @@
             margin-top: 10px;
             margin-bottom:10px;
         }
-        
+
         .teachersDesksTall {
             height: 100%;
             height: 200px;
+        }
+
+        .teachersDesksTall {
+            background-color: red;
         }
