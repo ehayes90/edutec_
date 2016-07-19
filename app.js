@@ -7,14 +7,12 @@ app.set('view engine', 'handlebars');
 
 // Calls Database Connection
 
-// var connection = require('./data/database/connection.js');
-
 var orm = require('./data/orm/orm.js');
 
 // Allows you to use files within the public folder
 
 app.use(express.static(__dirname + '/public'));
-app.use(express.static(__dirname + '/data/orm'));
+// app.use(express.static(__dirname + '/data'));
 
 // Functions for what happens when a / is hit on server
 
