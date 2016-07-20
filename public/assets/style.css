@@ -19,3 +19,6 @@ button:focus {
 .row {
   width: 100%;
 }
+.black-bg {
+    display: block;
+}
