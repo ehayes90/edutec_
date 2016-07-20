@@ -1,32 +1,25 @@
 /*Used to style teachers desk*/
 
-        .forTeachers {
-            margin-top: 10px;
-            margin-bottom:10px;
-        }
-
-        .teachersDesksTall {
-            height: 100%;
-            height: 200px;
-        }
-
-        .teachersDesksTall {
-
-            background-color:#79ADDC;
-        }
-
-            background-color: red;
-        }
-
-  /*  .header, .footer {
-    min-height: 60px;
-    padding: 0 15px;
+.forTeachers {
+    margin-top: 10px;
+    margin-bottom:10px;
 }
 
-.header {
-    position: fixed;
-    left: 0;
-    right: 0;
-    z-index: 1002;
-}*/
+.teachersDesksTall {
+    height: 100%;
+    height: 200px;
+}
 
+.teachersDesksTall{
+    width: 100%;
+    height: 200px;
+    bottom: 10%;
+    border-bottom: 10%;
+    margin-bottom: 5%;
+    background-color:#79ADDC;
+}
+
+
+.teachersDesksWide{
+    background-color:#79ADDC;
+}

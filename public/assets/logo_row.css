@@ -11,10 +11,11 @@
 .logoOnly {
     display: block;
     text-align: center;
+    background-color: #ffd777;
+    border-bottom: 1px solid #c9aa5f;
 }
 
 .logoImg {
-	width: 25%;
 	margin-right: auto;
 	margin-left: auto;
 	float: left;
