@@ -57,14 +57,12 @@
 </head>
 <body>
 
-
-<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 logoOnly">
-
-	<section id="container" >
+<section id="container" >
+	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 logoOnly">
 		<header class="header black-bg">
-<!-- 	        <div class="sidebar-toggle-box">
+	        <div class="sidebar-toggle-box">
 	            <div class="fa fa-bars tooltips" data-original-title="Toggle Navigation"></div>
-	        </div> -->
+	        </div>
 		<img  class="col-xs-12 col-sm-12 col-md-12 col-lg-12 logoImg" style="width:100px; text-align: center;" src="logo/EduTech.png" alt="Logo" align="left" id="logo" >
 		</header>
 	</section>
@@ -72,26 +70,26 @@
 </div>
 
 <!-- Code below holds the main nav bar and body pages that are implemented through Handlebars pages. -->
-
 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 holdBody">
+	<div id="sidebar"  class="nav-collapse ">
+              <!-- sidebar menu start-->
+            <ul class="sidebar-menu" id="nav-accordion">
+                <div class="nav notify-row" id="top_menu">
+                <!--  notification start -->
+                 <p class="centered"><a href="profile.html"><img src="/logo/EduTechIcon.png" class="img-circle" width="60"></a>Professor Name</p>
+				</div>
+			</ul>
+</div>
 
 <!-- Code in div with the class leftNav is solely for buttons intended to be shown on left payne of screen inside of main van bar. -->
 
-	<div class="col-xs-12 col-sm-12 col-md-2 col-lg-2 leftNav sidebar-menu">
+
+
 
 	<!-- 	Div for personnel image and name as displayed on Jorges test html file -->
 
-		<div class="row personnelDiv">
+		<!-- sidebar menu start-->
 
-			<img src="/logo/EduTechIcon.png" class="img-square" width="50%">
-			<span class="row" id="personnelName"> Professor Name </span>
-
-		</div>
-
-	<!-- sidebar menu start-->
-		<aside>    
-		    <div id="sidebar"  class="nav-collapse">
-				<ul class="sidebar-menu" id="nav-accordion">
 
 			<!-- Div for authorization buttons. These buttons should be visible on homepage but hidden after login has been completed. -->
 
@@ -124,7 +122,7 @@
 			</div>
 		</aside>
 
-	</div>	
+	</div>
 
 	<div class="col-xs-12 col-sm-12 col-md-10 col-lg-10 rightBody">
 

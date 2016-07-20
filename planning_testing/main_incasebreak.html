@@ -3,8 +3,8 @@
 <head>
 	<title>EduTech</title>
 
-	<meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<!-- Require JS Implementation Script -->
 
@@ -55,21 +55,19 @@
 	<!-- Space for Font Codes .. Currently Empty -->
 
 </head>
+
+<!-- <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 logoOnly"> -->
+
+<section id="container" >
+	<header class="header black-bg">
+              <div class="sidebar-toggle-box">
+                  <div class="fa fa-bars tooltips" data-placement="right" data-original-title="Toggle Navigation"></div>
+              </div>
+    		<a href="main.handlebars" class="logo" src="./public/logo/EduTechIcon.png"><b>EDUTEC</b></a>
+</header>
+</section>
+
 <body>
-
-
-<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 logoOnly">
-
-	<section id="container" >
-		<header class="header black-bg">
-<!-- 	        <div class="sidebar-toggle-box">
-	            <div class="fa fa-bars tooltips" data-original-title="Toggle Navigation"></div>
-	        </div> -->
-		<img  class="col-xs-12 col-sm-12 col-md-12 col-lg-12 logoImg" style="width:100px; text-align: center;" src="logo/EduTech.png" alt="Logo" align="left" id="logo" >
-		</header>
-	</section>
-
-</div>
 
 <!-- Code below holds the main nav bar and body pages that are implemented through Handlebars pages. -->
 
@@ -83,13 +81,13 @@
 
 		<div class="row personnelDiv">
 
-			<img src="/logo/EduTechIcon.png" class="img-square" width="50%">
+			<img src="logo/EduTechIcon.png" class="img-square" width="50%">
 			<span class="row" id="personnelName"> Professor Name </span>
 
 		</div>
 
 	<!-- sidebar menu start-->
-		<aside>    
+		<aside>
 		    <div id="sidebar"  class="nav-collapse">
 				<ul class="sidebar-menu" id="nav-accordion">
 
@@ -124,11 +122,11 @@
 			</div>
 		</aside>
 
-	</div>	
+	</div>
 
 	<div class="col-xs-12 col-sm-12 col-md-10 col-lg-10 rightBody">
 
-		{{{ body }}}
+		<!-- {{{ body }}} -->
 
 	</div>
 </div>
