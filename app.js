@@ -8,6 +8,8 @@ app.set('view engine', 'handlebars');
 // Calls Database Connection .. For node console testing only, to be removed later.
 
 var orm = require('./data/orm/orm.js');
+console.log(orm);
+console.log(orm.getStudents);
 
 // Allows you to use files within the public folder
 
@@ -18,6 +20,18 @@ app.use(express.static(__dirname + '/public'));
 
 app.get('/', function (req, res) {
 	res.render('home');
+});
+
+app.get('/api/students', function(req, res){
+	orm.getStudents(function(studentsArray) {
+		res.json(studentsArray);
+	});
+});
+
+app.get('/api/personnel', function(req, res){
+	orm.getPersonnel(function(personnelData) {
+		res.json(personnelData);
+	});
 });
 
 app.get('/register', function (req, res) {
