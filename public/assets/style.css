@@ -3,7 +3,7 @@ body {
 	margin: 0;
 }
 
-h1, h2, h3, h4, h5, h6, body {
+h1, h2, h3, h4, h5, h6, p {
 	padding: 0;
 	margin: 0;
 }
@@ -16,6 +16,7 @@ button:focus {
 	outline: 0;
 }
 
+<<<<<<< HEAD
 /* Teacher Desk */
 
 .teachersDesksTall{
@@ -64,3 +65,8 @@ button:focus {
     background: #ffd777;
     border-bottom:1px solid #c9aa5f;
 }
+
+.row {
+  width: 100%;
+}
+
