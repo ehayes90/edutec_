@@ -11,6 +11,10 @@
         }
 
         .teachersDesksTall {
+
+            background-color:#79ADDC;
+        }
+
             background-color: red;
         }
 
@@ -25,3 +29,4 @@
     right: 0;
     z-index: 1002;
 }*/
+
