@@ -3,6 +3,9 @@
 <head>
 	<title>EduTech</title>
 
+	<meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 	<!-- Require JS Implementation Script -->
 
 	<script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
@@ -22,6 +25,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
 	<!-- Style CSS -->
+
 	<link rel="stylesheet" type="text/css" href="/assets/style.css">
 
 	<link rel="stylesheet" type="text/css" href="/assets/about.css">
@@ -69,6 +73,12 @@
 	</button>
 </header> -->
 
+<section id="container" >
+	<header class="header black-bg">
+              <div class="sidebar-toggle-box">
+                  <div class="fa fa-bars tooltips" data-placement="right" data-original-title="Toggle Navigation"></div>
+              </div>
+
 
 
 <div class="row col-xs-2 col-sm-2 col-md-2 col-lg-2 logoOnly">
@@ -78,10 +88,13 @@
 
 <!-- 	<img class="col-xs-12 col-sm-12 col-md-12 col-lg-12 logoImg" src="logo/EduTech.png" alt="Logo" > -->
 
+<div class="row col-xs-12 col-sm-12 col-md-12 col-lg-12 logoOnly" id="black-bg">
 
-</div>
 
 
+	<img  class="col-xs-12 col-sm-12 col-md-12 col-lg-12 logoImg" style="width:10%; text-align: center;" src="logo/EduTech.png" alt="Logo" align="left" id="logo" >
+
+</section>
 
 <!-- Code below holds the main nav bar and body pages that are implemented through Handlebars pages. -->
 
@@ -89,21 +102,21 @@
 
 <!-- Code in div with the class leftNav is solely for buttons intended to be shown on left payne of screen inside of main van bar. -->
 
-	<div class="col-xs-12 col-sm-12 col-md-2 col-lg-2 leftNav">
+	<div class="col-xs-12 col-sm-12 col-md-2 col-lg-2 leftNav sidebar-menu">
 
 	<!-- 	Div for personnel image and name as displayed on Jorges test html file -->
 
 		<div class="row personnelDiv">
 
-			<!-- <img src=""> -->
-
+			<img src="/logo/EduTechIcon.png" class="img-square" width="50%">
 			<span id="personnelName"></span>
 
 		</div>
+	</header>
 
-		<!-- Div for authorization buttons. These buttons should be visible on homepage but hidden after login has been completed. -->
 
-		<div class="row authButtons">
+
+
 
 
 			<button class="btn btn-default col-xs-6 col-sm-6 col-md-12 col-lg-12" id="registerButton">
@@ -116,6 +129,20 @@
 
 			<button class="btn btn-default col-xs-6 col-sm-6 col-md-12 col-lg-12" id="logoutButton">
 
+
+
+ <!-- sidebar menu start-->
+<aside>
+    <div id="sidebar"  class="nav-collapse ">
+		<ul class="sidebar-menu" id="nav-accordion">
+
+	<!-- Div for authorization buttons. These buttons should be visible on homepage but hidden after login has been completed. -->
+
+		<div class="row authButtons">
+		<li class="mt">
+			<a class="active" href="index.html">
+                          <i class="fa fa-dashboard"></i>
+
 			<button class="btn btn-default col-xs-6 col-sm-6 col-md-12 col-lg-12 navButton" id="registerButton">
 			Register
 			</button>
@@ -127,11 +154,15 @@
 			<button class="btn btn-default col-xs-6 col-sm-6 col-md-12 col-lg-12 navButton" id="logoutButton">
 
 				Logout
+			</a>
 			</button>
+		</li>
 
+		</ul>
 		</div>
 
 		<div class="row navButtons">
+
 
 
 			<button id="selectRandomSeating" class="btn btn-default col-xs-6 col-sm-6 col-md-12 col-lg-12"> Random Seating </button>
@@ -139,15 +170,17 @@
 	        <button id="selectDescSeating" class="btn btn-default col-xs-6 col-sm-6 col-md-12 col-lg-12"> Descending Seating </button>
 	        <button id="selectRanPart" class="btn btn-default col-xs-6 col-sm-6 col-md-12 col-lg-12"> Random Participation </button>
 	        <button id="selectRanGroups" class="btn btn-default col-xs-6 col-sm-6 col-md-12 col-lg-12"> Random Groups </button>
+
 			<button id="selectRandomSeating" class="btn btn-default col-xs-6 col-sm-6 col-md-12 col-lg-12 navButton"> Random Seating </button>
 	        <button id="selectAscSeating" class="btn btn-default col-xs-6 col-sm-6 col-md-12 col-lg-12 navButton"> Ascending Seating </button>
 	        <button id="selectDescSeating" class="btn btn-default col-xs-6 col-sm-6 col-md-12 col-lg-12 navButton"> Descending Seating </button>
 	        <button id="selectRanPart" class="btn btn-default col-xs-6 col-sm-6 col-md-12 col-lg-12 navButton"> Random Participation </button>
 	        <button id="selectRanGroups" class="btn btn-default col-xs-6 col-sm-6 col-md-12 col-lg-12 navButton"> Random Groups </button>
 
-	    </div>
-
+		</div>
 	</div>
+	</div>
+</aside>
 
 	<div class="col-xs-12 col-sm-12 col-md-10 col-lg-10 rightBody">
 

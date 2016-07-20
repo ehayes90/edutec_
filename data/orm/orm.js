@@ -1,6 +1,6 @@
 var connection = require('../database/connection.js');
 
-var getStudents = function() {
+var getStudents = function(studentFunction) {
     var inquiry = 'SELECT * FROM students';
     connection.query(inquiry, function(err, data) {
         if (err) throw err;
@@ -26,14 +26,14 @@ var getStudents = function() {
 
         	var studentsArray = [student];
 
-        	console.log(studentsArray);
+        	// console.log(studentsArray);
+            studentFunction(data);
+            
         }
     });
 };
 
-getStudents();
-
-var getPersonnel = function() {
+var getPersonnel = function(personnelfunction) {
     var inquiry = 'SELECT * FROM personnel';
     connection.query(inquiry, function(err, data) {
         if (err) throw err;
@@ -58,15 +58,20 @@ var getPersonnel = function() {
             };
 
             var personnelArray = [staff];
+            // console.log(personnelArray);
 
-            console.log(personnelArray);
+            personnelfunction(data);
 
         }
     });
 };
 
-getPersonnel();
+var ormMethods = {
+    getStudents: getStudents,
+    getPersonnel: getPersonnel
+};
 
+module.exports = ormMethods;
 
 
 
