@@ -86,6 +86,7 @@
 	<img  class="col-xs-12 col-sm-12 col-md-12 col-lg-12 logoImg" style="width:10%; text-align: center;" src="logo/EduTech.png" alt="Logo" align="left" id="logo" >
 
 </section>
+</header>
 
 <!-- Code below holds the main nav bar and body pages that are implemented through Handlebars pages. -->
 
@@ -103,7 +104,6 @@
 			<span id="personnelName"></span>
 
 		</div>
-	</header>
 
 
 
@@ -118,38 +118,47 @@
 	<!-- Div for authorization buttons. These buttons should be visible on homepage but hidden after login has been completed. -->
 
 		<div class="row authButtons">
+
 		<li class="mt">
 			<a class="active" href="index.html">
-                          <i class="fa fa-dashboard"></i>
-			<button class="btn btn-default col-xs-6 col-sm-6 col-md-12 col-lg-12 navButton" id="registerButton">
-			Register
-			</button>
+             <i class="fa fa-dashboard"></i>
+				<button class="btn btn-default col-xs-6 col-sm-6 col-md-12 col-lg-12 navButton" id="registerButton">
+				Register
+				</button>
 
-			<button class="btn btn-default col-xs-6 col-sm-6 col-md-12 col-lg-12 navButton" id="loginButton">
-				Login
-			</button>
+				<button class="btn btn-default col-xs-6 col-sm-6 col-md-12 col-lg-12 navButton" id="loginButton">
+					Login
+				</button>
 
-			<button class="btn btn-default col-xs-6 col-sm-6 col-md-12 col-lg-12 navButton" id="logoutButton">
-				Logout
+				<button class="btn btn-default col-xs-6 col-sm-6 col-md-12 col-lg-12 navButton" id="logoutButton">
+					Logout
+				</button>
 			</a>
-			</button>
 		</li>
-
 		</ul>
 		</div>
+<aside>
 
-		<div class="row navButtons">
-			<button id="selectRandomSeating" class="btn btn-default col-xs-6 col-sm-6 col-md-12 col-lg-12 navButton"> Random Seating </button>
-	        <button id="selectAscSeating" class="btn btn-default col-xs-6 col-sm-6 col-md-12 col-lg-12 navButton"> Ascending Seating </button>
-	        <button id="selectDescSeating" class="btn btn-default col-xs-6 col-sm-6 col-md-12 col-lg-12 navButton"> Descending Seating </button>
-	        <button id="selectRanPart" class="btn btn-default col-xs-6 col-sm-6 col-md-12 col-lg-12 navButton"> Random Participation </button>
-	        <button id="selectRanGroups" class="btn btn-default col-xs-6 col-sm-6 col-md-12 col-lg-12 navButton"> Random Groups </button>
+    <div id="sidebar"  class="nav-collapse ">
 
-		</div>
-	</div>
+	<ul class="sidebar-menu" id="nav-accordion">
+
+		<div class="row authButtons">
+			<li class="mt">
+				<a class="active" href="index.html">
+		        	<i class="fa fa-dashboard"></i>
+						<div class="row navButtons">
+					<button id="selectRandomSeating" class="btn btn-default col-xs-6 col-sm-6 col-md-12 col-lg-12 navButton"> Random Seating </button>
+			        <button id="selectAscSeating" class="btn btn-default col-xs-6 col-sm-6 col-md-12 col-lg-12 navButton"> Ascending Seating </button>
+			        <button id="selectDescSeating" class="btn btn-default col-xs-6 col-sm-6 col-md-12 col-lg-12 navButton"> Descending Seating </button>
+			        <button id="selectRanPart" class="btn btn-default col-xs-6 col-sm-6 col-md-12 col-lg-12 navButton"> Random Participation </button>
+			        <button id="selectRanGroups" class="btn btn-default col-xs-6 col-sm-6 col-md-12 col-lg-12 navButton"> Random Groups </button>
+				</a>
+				</li>
+			</div>
+		</ul>
 	</div>
 </aside>
-
 	<div class="col-xs-12 col-sm-12 col-md-10 col-lg-10 rightBody">
 
 		{{{ body }}}
