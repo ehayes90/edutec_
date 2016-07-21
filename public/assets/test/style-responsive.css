@@ -15,7 +15,6 @@
 
     /*chat room*/
 
-
 }
 
 @media (max-width: 768px) {
@@ -228,8 +227,6 @@
 
 }
 
-
-
 @media (max-width: 480px) {
 
     .notify-row, .search, .dont-show , .inbox-head .sr-input, .inbox-head .sr-btn{
@@ -289,7 +286,3 @@
     }
 
 }
-
-
-
-
