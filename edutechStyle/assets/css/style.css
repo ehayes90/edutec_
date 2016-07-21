@@ -2240,5 +2240,10 @@ label {
     min-height: 900px;
 }
 
-
+.jumbotron{
+    width: 90%;
+}
+#jumbotron{
+    width: 90%;
+}
 
