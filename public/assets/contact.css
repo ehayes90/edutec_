@@ -6,4 +6,11 @@
 #inputC1{
 	text-align: center;
 	margin: 0 auto;
+	display: inline-block;
+}
+
+#inputC2{
+	height: 100px !important;
+	width: 400px;
+	display: inline-block;
 }
