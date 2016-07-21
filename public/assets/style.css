@@ -16,9 +16,61 @@ button:focus {
 	outline: 0;
 }
 
+
+/* Teacher Desk */
+
+.teachersDesksTall{
+    
+    background-color:#79ADDC;
+}
+
+
+.forTeachers{
+     background-color:#79ADDC;
+
+}
+
+
+
+.studentDesks{
+    -moz-border-radius:28px;
+   -webkit-border-radius:28px;
+   border-radius:10px;
+   border:1px solid #79ADDC ;
+   display: inline-block;
+   cursor:pointer;
+   background-color:#BF70C9;
+   font-size:17px;
+   padding:16px 31px;
+   
+}
+
+.teachersDesksWide{
+    background-color:#79ADDC;
+}
+
+
+
+
+.navbar-brand {
+    padding: 0;
+}
+
+#container {
+    width: 100%;
+    height: 100%;
+    background: #ffd777;
+}
+#black-bg {
+    background: #ffd777;
+    border-bottom:1px solid #c9aa5f;
+}
+
 .row {
   width: 100%;
 }
+
 .black-bg {
     display: block;
 }
+
