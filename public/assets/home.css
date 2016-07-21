@@ -3,7 +3,9 @@
 .jumbotron{
 	background-color: silver;
 	text-align: center;
-	width: 90%;
+	width: 80%;
 	margin-right: auto;
 	margin-left: auto;
+/*	margin: 0;
+	padding: 0;*/
 }

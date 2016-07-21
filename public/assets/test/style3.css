@@ -115,7 +115,7 @@ ul.top-menu > li > .logout:hover {
 }
 
 #sidebar {
-    width: 210px;
+    /*width: 210px;*/
     height: 100vh;
     /*position: fixed;*/
     background: #424a5d;
