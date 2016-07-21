@@ -1,1 +1,9 @@
 /*Used to style information displayed on contact page*/
+#h1Contact{
+	text-align: center;
+}
+
+#inputC1{
+	text-align: center;
+	margin: 0 auto;
+}
