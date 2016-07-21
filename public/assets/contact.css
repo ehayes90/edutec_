@@ -3,7 +3,9 @@
 	text-align: center;
 	width: 
 }
-
+#JumboContact{
+	padding-bottom: 0%;
+}
 #exampleInputEmail{
 	width: 75%;
 	text-align: center;
@@ -33,5 +35,6 @@
 #subBut{
 	margin:4%;
 	align-items: center;
+	width: 14%;
 
 }
