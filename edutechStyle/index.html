@@ -35,7 +35,7 @@
               </div>
             <!--logo start-->
 
-            <a href="index.html" class="logo"><img src="assets/img/EduTech2.png" class="img-square" width="90"><b></b></a>
+            <a href="index.html" class="logo"><img src="assets/img/EduTech2.png" class="img-rounded corners" width="90"><b></b></a>
             <!--logo end-->
 
                 <!--  notification start -->
@@ -44,7 +44,7 @@
             </div>
             <div class="top-menu">
               <ul class="nav pull-right top-menu">
-                    <li><a class="logout" href="login.html">Logout</a></li>
+                    <li><a class="logout" href="login.html" id="logoutButton">Logout</a></li>
               </ul>
             </div>
         </header>
@@ -58,53 +58,61 @@
               <!-- sidebar menu start-->
               <ul class="sidebar-menu" id="nav-accordion">
 
-                  <p class="centered"><a href="profile.html"><img src="assets/img/EduTechIcon.png" class="img-square" width="60"></a></p>
+                  <p class="centered"><a href="profile.html"><img src="assets/img/EduTechIcon.png" class="img-rounded corners" width="60"></a></p>
                   <h5 class="centered">Professor Name</h5>
 
                   <!-- Ramdom Seating -->
                   <li class="mt">
                       <a class="active" href="index.html">
-                          <i class="fa fa-dashboard"></i>
+                          <i class="fa fa-desktop" id="registerButton"></i>
+                          <span>Register</span>
+                      </a>
+                  </li>
+
+                   <li class="mt">
+                      <a class="sub-menu" href="index.html">
+                          <i class="fa fa-dashboard" id="loginButton"></i>
+                          <span>Login</span>
+                      </a>
+                  </li>
+
+                  <li class="mt">
+                      <a class="sub-menu" href="index.html">
+                          <i class="fa fa-dashboard" id="selectRandomSeating"></i>
                           <span>Random Seating</span>
                       </a>
                   </li>
                       <!-- Ascending Seating -->
                   <li class="sub-menu">
                       <a href="javascript:;" >
-                          <i class="fa fa-desktop"></i>
+                          <i class="fa fa-desktop" id="selectAscSeating"></i>
                           <span>Ascending Seating</span>
                       </a>
                       <!-- Descending Seating -->
                   <li class="sub-menu">
                       <a href="javascript:;" >
-                          <i class="fa fa-cogs"></i>
+                          <i class="fa fa-cogs" id="selectDescSeating"></i>
                           <span>Descending Seating</span>
                       </a>
                      <!-- Random Participation -->
                   <li class="sub-menu">
                       <a href="javascript:;" >
-                          <i class="fa fa-book"></i>
+                          <i class="fa fa-book" id="selectRanPart"></i>
                           <span>Random Participation</span>
                       </a>
                     <!-- Random Groups -->
                     <li class="sub-menu">
                       <a href="javascript:;" >
-                          <i class="fa fa-book"></i>
+                          <i class="fa fa-book" id="selectRanGroups"></i>
                           <span>Random Groups</span>
                       </a>
-                      <!-- Clear -->
-                        <li class="sub-menu">
-                          <a href="javascript:;" >
-                            <i class="fa fa-book"></i>
-                            <span>Clear</span>
-      </aside>
+        </aside>
 
       <!--main content start-->
       <section id="main-content">
           <section class="wrapper">
-
-              <div class="row">
-                  <div class="col-lg-9 main-chart">
+                <div class="row">
+                  <div class="col-lg- main-chart">
 
                     <div class="row mtbox">
                       <div class="col-md-2 col-sm-2 col-md-offset-1 box0">
@@ -135,30 +143,29 @@
               </div>
 
                 <!-- SERVER STATUS PANELS -->
-                <section id="main-content">
+        <section id="main-content">
           <section class="wrapper">
-
-              <div class="row">
+            <!-- <div class="container">  -->
+             <div class="row">
                 <div class="col-lg-8 main-chart">
 
             <!-- Students Desk -->
-            <div class="col-md-4 mb">
+        <div class="col-md-4 mb">
               <div class="darkblue-panel pn">
                   <div class="darkblue-header">
                     <h5>Desk 1</h5>
+                    <p>Student Name</p>
                   </div>
                 <canvas id="serverstatus02" height="120" width="120"></canvas>
-                <p>Student Name</p>
               </div>
-            </div>
-
+        </div>
             <div class="col-md-4 mb">
               <div class="darkblue-panel pn">
                   <div class="darkblue-header">
                     <h5>Desk 2</h5>
+                   <p>Student Name</p>
                   </div>
                 <canvas id="serverstatus02" height="120" width="120"></canvas>
-                <p>Student Name</p>
               </div>
             </div>
 
@@ -166,9 +173,9 @@
               <div class="darkblue-panel pn">
                   <div class="darkblue-header">
                     <h5>Desk 3</h5>
+                     <p>Student Name</p>
                   </div>
                 <canvas id="serverstatus02" height="120" width="120"></canvas>
-                <p>Student Name</p>
               </div>
             </div>
 
@@ -176,9 +183,9 @@
               <div class="darkblue-panel pn">
                   <div class="darkblue-header">
                     <h5>Desk 4</h5>
+                    <p>Student Name</p>
                   </div>
                 <canvas id="serverstatus02" height="120" width="120"></canvas>
-                <p>Student Name</p>
               </div>
             </div>
 
@@ -186,10 +193,261 @@
               <div class="darkblue-panel pn">
                   <div class="darkblue-header">
                     <h5>Desk 5</h5>
+                    <p>Student Name</p>
                   </div>
                 <canvas id="serverstatus02" height="120" width="120"></canvas>
-                <p>Student Name</p>
               </div>
             </div>
+
+            <div class="col-md-4 mb">
+              <div class="darkblue-panel pn">
+                  <div class="darkblue-header">
+                    <h5>Desk 6</h5>
+                    <p>Student Name</p>
+                  </div>
+                <canvas id="serverstatus02" height="120" width="120"></canvas>
+              </div>
+            </div>
+
+            <div class="col-md-4 mb">
+              <div class="darkblue-panel pn">
+                  <div class="darkblue-header">
+                    <h5>Desk 7</h5>
+                    <p>Student Name</p>
+                  </div>
+                <canvas id="serverstatus02" height="120" width="120"></canvas>
+              </div>
+            </div>
+
+            <div class="col-md-4 mb">
+              <div class="darkblue-panel pn">
+                  <div class="darkblue-header">
+                    <h5>Desk 8</h5>
+                    <p>Student Name</p>
+                  </div>
+                <canvas id="serverstatus02" height="120" width="120"></canvas>
+              </div>
+            </div>
+
+            <div class="col-md-4 mb">
+              <div class="darkblue-panel pn">
+                  <div class="darkblue-header">
+                    <h5>Desk 9</h5>
+                    <p>Student Name</p>
+                  </div>
+                <canvas id="serverstatus02" height="120" width="120"></canvas>
+              </div>
+            </div>
+
+            <div class="col-md-4 mb">
+              <div class="darkblue-panel pn">
+                  <div class="darkblue-header">
+                    <h5>Desk 10</h5>
+                    <p>Student Name</p>
+                  </div>
+                <canvas id="serverstatus02" height="120" width="120"></canvas>
+              </div>
+            </div>
+
+            <div class="col-md-4 mb">
+              <div class="darkblue-panel pn">
+                  <div class="darkblue-header">
+                    <h5>Desk 11</h5>
+                    <p>Student Name</p>
+                  </div>
+                <canvas id="serverstatus02" height="120" width="120"></canvas>
+              </div>
+            </div>
+
+            <div class="col-md-4 mb">
+              <div class="darkblue-panel pn">
+                  <div class="darkblue-header">
+                    <h5>Desk 12</h5>
+                    <p>Student Name</p>
+                  </div>
+                <canvas id="serverstatus02" height="120" width="120"></canvas>
+              </div>
+            </div>
+
+            <div class="col-md-4 mb">
+              <div class="darkblue-panel pn">
+                  <div class="darkblue-header">
+                    <h5>Desk 13</h5>
+                    <p>Student Name</p>
+                  </div>
+                <canvas id="serverstatus02" height="120" width="120"></canvas>
+              </div>
+            </div>
+
+            <div class="col-md-4 mb">
+              <div class="darkblue-panel pn">
+                  <div class="darkblue-header">
+                    <h5>Desk 14</h5>
+                    <p>Student Name</p>
+                  </div>
+                <canvas id="serverstatus02" height="120" width="120"></canvas>
+              </div>
+            </div>
+
+            <div class="col-md-4 mb">
+              <div class="darkblue-panel pn">
+                  <div class="darkblue-header">
+                    <h5>Desk 15</h5>
+                    <p>Student Name</p>
+                  </div>
+                <canvas id="serverstatus02" height="120" width="120"></canvas>
+              </div>
+            </div>
+
+                <div class="col-md-4 mb">
+              <div class="darkblue-panel pn">
+                  <div class="darkblue-header">
+                    <h5>Desk 16</h5>
+                    <p>Student Name</p>
+                  </div>
+                <canvas id="serverstatus02" height="120" width="120"></canvas>
+              </div>
+            </div>
+
+                <div class="col-md-4 mb">
+              <div class="darkblue-panel pn">
+                  <div class="darkblue-header">
+                    <h5>Desk 17</h5>
+                    <p>Student Name</p>
+                  </div>
+                <canvas id="serverstatus02" height="120" width="120"></canvas>
+              </div>
+            </div>
+
+                <div class="col-md-4 mb">
+              <div class="darkblue-panel pn">
+                  <div class="darkblue-header">
+                    <h5>Desk 18</h5>
+                    <p>Student Name</p>
+                  </div>
+                <canvas id="serverstatus02" height="120" width="120"></canvas>
+              </div>
+            </div>
+
+                <div class="col-md-4 mb">
+              <div class="darkblue-panel pn">
+                  <div class="darkblue-header">
+                    <h5>Desk 19</h5>
+                    <p>Student Name</p>
+                  </div>
+                <canvas id="serverstatus02" height="120" width="120"></canvas>
+              </div>
+            </div>
+
+                <div class="col-md-4 mb">
+              <div class="darkblue-panel pn">
+                  <div class="darkblue-header">
+                    <h5>Desk 20</h5>
+                    <p>Student Name</p>
+                  </div>
+                <canvas id="serverstatus02" height="120" width="120"></canvas>
+              </div>
+            </div>
+
+                <div class="col-md-4 mb">
+              <div class="darkblue-panel pn">
+                  <div class="darkblue-header">
+                    <h5>Desk 21</h5>
+                    <p>Student Name</p>
+                  </div>
+                <canvas id="serverstatus02" height="120" width="120"></canvas>
+              </div>
+            </div>
+
+                <div class="col-md-4 mb">
+              <div class="darkblue-panel pn">
+                  <div class="darkblue-header">
+                    <h5>Desk 22</h5>
+                    <p>Student Name</p>
+                  </div>
+                <canvas id="serverstatus02" height="120" width="120"></canvas>
+              </div>
+            </div>
+
+                <div class="col-md-4 mb">
+              <div class="darkblue-panel pn">
+                  <div class="darkblue-header">
+                    <h5>Desk 23</h5>
+                    <p>Student Name</p>
+                  </div>
+                <canvas id="serverstatus02" height="120" width="120"></canvas>
+              </div>
+            </div>
+
+                <div class="col-md-4 mb">
+              <div class="darkblue-panel pn">
+                  <div class="darkblue-header">
+                    <h5>Desk 24</h5>
+                    <p>Student Name</p>
+                  </div>
+                <canvas id="serverstatus02" height="120" width="120"></canvas>
+              </div>
+            </div>
+
+                <div class="col-md-4 mb">
+              <div class="darkblue-panel pn">
+                  <div class="darkblue-header">
+                    <h5>Desk 25</h5>
+                    <p>Student Name</p>
+                  </div>
+                <canvas id="serverstatus02" height="120" width="120"></canvas>
+              </div>
+            </div>
+
+                <div class="col-md-4 mb">
+              <div class="darkblue-panel pn">
+                  <div class="darkblue-header">
+                    <h5>Desk 26</h5>
+                    <p>Student Name</p>
+                  </div>
+                <canvas id="serverstatus02" height="120" width="120"></canvas>
+              </div>
+            </div>
+
+                <div class="col-md-4 mb">
+              <div class="darkblue-panel pn">
+                  <div class="darkblue-header">
+                    <h5>Desk 27</h5>
+                    <p>Student Name</p>
+                  </div>
+                <canvas id="serverstatus02" height="120" width="120"></canvas>
+              </div>
+            </div>
+
+                <div class="col-md-4 mb">
+              <div class="darkblue-panel pn">
+                  <div class="darkblue-header">
+                    <h5>Desk 28</h5>
+                    <p>Student Name</p>
+                  </div>
+                <canvas id="serverstatus02" height="120" width="120"></canvas>
+              </div>
+            </div>
+
+                <div class="col-md-4 mb">
+              <div class="darkblue-panel pn">
+                  <div class="darkblue-header">
+                    <h5>Desk 29</h5>
+                    <p>Student Name</p>
+                  </div>
+                <canvas id="serverstatus02" height="120" width="120"></canvas>
+              </div>
+            </div>
+
+                <div class="col-md-4 mb">
+              <div class="darkblue-panel pn">
+                  <div class="darkblue-header">
+                    <h5>Desk 30</h5>
+                    <p>Student Name</p>
+                  </div>
+                <canvas id="serverstatus02" height="120" width="120"></canvas>
+              </div>
+            </div>
+
   </body>
 </html>
