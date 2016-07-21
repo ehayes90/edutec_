@@ -3,4 +3,7 @@
 .jumbotron{
 	background-color: silver;
 	text-align: center;
+	width: 90%;
+	margin-right: auto;
+	margin-left: auto;
 }
