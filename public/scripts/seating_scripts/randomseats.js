@@ -50,12 +50,13 @@ $(".runRandomSeats").on('click', function() {
 
 	var studentsArray = data;
 
-	console.log(studentsArray);
+	console.log("api data " + studentsArray);
 
 		for (i=0; i<studentsArray.length; i++) {
 			
 			var studentID = studentsArray[i].id;
-			console.log(map.studentID);
+			//console.log(map.studentID);
+			console.log(studentID);
 
 			var studentFN = studentsArray[i].first_name;
 			var studentLN = studentsArray[i].last_name;
@@ -72,11 +73,13 @@ $(".runRandomSeats").on('click', function() {
 
 			var students = [student];
 
-			console.log(student);
+			console.log("student data " + student);
 
 			var shuffleStudents = shuffle(students);
 
 			var randomStudents = students;
+
+			console.log(randomStudents);
 
 
 
