@@ -1,78 +1,44 @@
 $(document).ready (function() {
 
+	var shuffle = function(a) {
+		for(var j, x, i = a.length; i; j = parseInt(Math.random() * i), x = a[--i], a[i] = a[j], a[j] = x);
+		return a;
+	};
 
-	 var roster = [
-	// 	"Barry Allen",
-	// 	"Bruce Banner",
-	// 	"Clint Barton",
-	// 	"Arthur Curry",
-	// 	"Bobby Drake",
-	// 	"Ben Grimm",
-	// 	"Clark Kent", 
-	// 	"Scott Lang",
-	// 	"Lex Luthor",
-	// 	"Pietro Maximoff",
-	// 	"Wanda Maximoff",
-	// 	"Matt Murdock",
-	// 	"Edward Nigma",
-	// 	"Otto Octavius",
-	// 	"Norman Osborn",
-	// 	"Peter Parker",
-	// 	"Kitty Pride",
-	// 	"Diana Prince",
-	// 	"Harley Quinn",
-	// 	"Peter Rasputin",
-	// 	"Reed Richards",
-	// 	"Steve Rogers",
-	// 	"Natasha Romanoff", 
-	// 	"Tony Stark",
-	// 	"Victor Stone", 
-	// 	"Johnny Storm", 
-	// 	"Susan Storm",
-	// 	"Jennifer Walters",
-	// 	"Bruce Wayne", 
-	// 	"Wade Wilson"
-		
-	 ];
+	$.ajax({
+	    url: "/api/students",
+	    dataType: 'json',
+	    success: function(results){
+	     
+	      
+	       var fullNames = [];
 
 
+	       	for (var d=0; d<results.length; d++) {
+	 			fullNames.push(results[d].last_name +', '+ results[d].first_name);
+	    	}
 
-//$.getJSON('http://localhost:8080/api/students', function(rosterData) {
+	    	var randomShuff = shuffle(fullNames);
+	    	var i = 0;
 
-		//var jsonRoster = JSON.stringify(rosterData);
-
-		//});
-
-
-var shuffle = function(a) {
-	for(var j, x, i = a.length; i; j = parseInt(Math.random() * i), x = a[--i], a[i] = a[j], a[j] = x);
-	return a;
-};
-var randomShuff = shuffle(jsonRoster); 
-var i = 0
-
-$(".runRandomPart").on('click', function() {
-
- //function activate() {
-	if(i == randomShuff.length) i = 0;
-	return $('.main').html(randomShuff[i++]);
+	    	$(".runRandomPart").on('click', function() {
 
 
+				if(i == randomShuff.length) i = 0;
+				return $('.main').html(randomShuff[i++]);
+				console.log('========');
+				console.log(randomShuff);
+			});
 
-	
-	
-});
 
-$(".clearRandomPart").on('click', function() {
+		}
+	});
+
+	$(".clearRandomPart").on('click', function() {
 
     location.reload();
     $('.main').empty();
 });
 
 
-
 });
-
-
-
-
