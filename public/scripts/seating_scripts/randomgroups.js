@@ -37,7 +37,6 @@ var shuffle = function(a) {
 	    	$('#g2').on('click', function(){
 				var chunk = 2;
 				activate(chunk);
-				console.log("I'm a genius");
 	});
 			$('#g3').on('click', function(){
 				var chunk = 3;
