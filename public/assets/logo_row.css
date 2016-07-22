@@ -13,6 +13,8 @@
     text-align: center;
     background-color: #ffd777;
     border-bottom: 1px solid #c9aa5f;
+
+}
 }
 
 .logoImg {
@@ -20,3 +22,9 @@
 	margin-left: auto;
 	float: left;
 }
+.circular-image {
+
+  border-radius:  10%;
+
+
+  }
