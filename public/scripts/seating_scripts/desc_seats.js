@@ -42,7 +42,7 @@ $.ajax({
 	     
 	      
 	       var fullNames = [];
-	       console.log(fullNames);
+	       // console.log(fullNames);
 	       
 
 
@@ -55,9 +55,9 @@ $.ajax({
 
 		for (d=desks.length - 1, k=0; d>=0, k<fullNames.length; d--, k++) {
 	 	$(desks[d].html(fullNames[k]));
-	 	console.log(desks[d]);
-	 	console.log(fullNames[k]);
-	 	//console.log(fullNames[e]);
+	 	// console.log(desks[d]);
+	 	// console.log(fullNames[k]);
+	 	// //console.log(fullNames[e]);
 
 	 	//var e=fullNames.length - 1; e>=0; e--
 	 	//$("#ascStuD19").html('carlos');
