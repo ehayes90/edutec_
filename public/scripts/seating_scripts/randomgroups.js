@@ -16,7 +16,7 @@ var shuffle = function(a) {
 
 
 	       	for (var d=0; d<results.length; d++) {
-	 			fullNames.push(results[d].last_name +', '+ results[d].first_name);
+	 			fullNames.push(results[d].last_name +', '+ results[d].first_name + "&nbsp &nbsp");
 	    } //for fullNames.push
 
 	    	var randomShuff = shuffle(fullNames);
@@ -28,11 +28,11 @@ var shuffle = function(a) {
 		    for (i = 0; i < fullNames.length; i += chunkSize) {
 		    groups.push(fullNames.slice(i, i + chunkSize));
 
-		}//createRosterGroups()
+		}//for chucksize
 
 		    return groups;
 
-}
+}//createRosterGroups()
 
 	    	$('#g2').on('click', function(){
 				var chunk = 2;
