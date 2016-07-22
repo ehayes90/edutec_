@@ -21,3 +21,16 @@ console.log('something');
 //   });
 
 });
+
+
+// var student = [];
+
+// for ( loop ) {
+
+// 	var student = student[i].list;
+
+// 	$(".main").html("<div> <p class="studentDiv>")" + student + 123 + "</p> </div>"
+
+// }
+
+
