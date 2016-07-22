@@ -1,1 +1,9 @@
 /*Used to edit style for content displayed on about me page*/
+#abouth1{
+	text-align: center;
+}
+
+#abouth2{
+	text-align:center;
+	margin: 2%;
+}
