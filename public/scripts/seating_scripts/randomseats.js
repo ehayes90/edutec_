@@ -69,11 +69,20 @@ var desks = [
 		}
 	});
 
-	$(".clearRandomSeats").on('click', function() {
+	$(".clearRandomSeats").on("click", function(){
 
-    location.reload();
-    $('.main').empty();
-});
+		for ( d=0; d<desks.length; d++) {
+
+			$(desks[d]).html("");
+		}
+		
+	});
+
+	// 	$(".clearRandomSeats").on('click', function() {
+
+	//     location.reload();
+	//     $('.main').empty();
+	// });
 
 $("#tdesk1").on('click', function() {
 $( this ).toggleClass('green-bg');
