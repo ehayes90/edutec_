@@ -62,9 +62,9 @@ var shuffle = function(a) {
 			var groupedArray = createRosterGroups(randomShuff, chunkSize);
 			
 			for (var d = 0; d < groupedArray.length; d++){
-				console.log("each array " + groupedArray[d]); //each array in list
+				// console.log("each array " + groupedArray[d]); //each array in list
 			for (var x = 0; x < groupedArray[d].length; x++) {
-				console.log("each member " + groupedArray[d][x]); // each member in array
+				// console.log("each member " + groupedArray[d][x]); // each member in array
 			
 		}
 
@@ -85,11 +85,3 @@ $(".clearRandomGroups").on('click', function() {
 });
 
 }); //document
-
-
-
-
-
-
-
-
