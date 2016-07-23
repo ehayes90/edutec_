@@ -1,9 +1,13 @@
 /*Used to edit style for content displayed on about me page*/
 #abouth1{
 	text-align: center;
+	width: 97%;
+	font-size:60px;
 }
 
-#abouth2{
+#aboutP{
 	text-align:center;
-	margin: 2%;
+	margin: 3%;
+	font-size: 38px;
+
 }
