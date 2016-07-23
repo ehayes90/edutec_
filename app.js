@@ -7,7 +7,7 @@ app.set('view engine', 'handlebars');
 
 // Calls Database Connection .. For node console testing only, to be removed later.
 
-// var orm = require('./data/orm/orm.js');
+var orm = require('./data/orm/orm.js');
 // console.log(orm);
 // console.log(orm.getStudents);
 
