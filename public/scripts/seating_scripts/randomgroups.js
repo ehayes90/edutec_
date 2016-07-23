@@ -60,7 +60,7 @@ var shuffle = function(a) {
 			function activate(chunkSize) {
 
 			var groupedArray = createRosterGroups(randomShuff, chunkSize);
-
+			
 			for (var d = 0; d < groupedArray.length; d++){
 				console.log("each array " + groupedArray[d]); //each array in list
 			for (var x = 0; x < groupedArray[d].length; x++) {
