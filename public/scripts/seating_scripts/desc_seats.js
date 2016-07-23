@@ -32,7 +32,6 @@ var desks = [
 	$("#descStuD28"),
 	$("#descStuD29"),
 	$("#descStuD30")
-
 ];
 
 $.ajax({
