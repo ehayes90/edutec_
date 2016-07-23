@@ -69,20 +69,20 @@ var desks = [
 		}
 	});
 
-	$(".clearRandomSeats").on("click", function(){
+	// $(".clearRandomSeats").on("click", function(){
 
-		for ( d=0; d<desks.length; d++) {
+	// 	for ( d=0; d<desks.length; d++) {
 
-			$(desks[d]).html("");
-		}
+	// 		$(desks[d]).html("");
+	// 	}
 		
-	});
-
-	// 	$(".clearRandomSeats").on('click', function() {
-
-	//     location.reload();
-	//     $('.main').empty();
 	// });
+
+	 	$(".clearRandomSeats").on('click', function() {
+
+	    location.reload();
+	   $('.main').empty();
+	});
 
 $("#tdesk1").on('click', function() {
 $( this ).toggleClass('green-bg');
