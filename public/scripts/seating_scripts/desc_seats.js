@@ -1,35 +1,124 @@
 $(document).ready (function() {
 
-	var shuffle = function(a) {
-		for(var j, x, i = a.length; i; j = parseInt(Math.random() * i), x = a[--i], a[i] = a[j], a[j] = x);
-		return a;
-	};
 
-	$.ajax({
+var desks = [
+	$("#descStuD1"),
+	$("#descStuD2"),
+	$("#descStuD3"),
+	$("#descStuD4"),
+	$("#descStuD5"),
+	$("#descStuD6"),
+	$("#descStuD7"),
+	$("#descStuD8"),
+	$("#descStuD9"),
+	$("#descStuD10"),
+	$("#descStuD11"),
+	$("#descStuD12"),
+	$("#descStuD13"),
+	$("#descStuD14"),
+	$("#descStuD15"),
+	$("#descStuD16"),
+	$("#descStuD17"),
+	$("#descStuD18"),
+	$("#descStuD19"),
+	$("#descStuD20"),
+	$("#descStuD21"),
+	$("#descStuD22"),
+	$("#descStuD23"),
+	$("#descStuD24"),
+	$("#descStuD25"),
+	$("#descStuD26"),
+	$("#descStuD27"),
+	$("#descStuD28"),
+	$("#descStuD29"),
+	$("#descStuD30")
+
+];
+
+$.ajax({
 	    url: "/api/students",
 	    dataType: 'json',
 	    success: function(results){
 	     
-	       console.log(results[0].last_name);
-	       console.log(results[0].last_name);
+	      
 	       var fullNames = [];
+	       // console.log(fullNames);
+	       
+
 
 	       	for (var d=0; d<results.length; d++) {
-	 			fullNames.push(results[d].last_name +','+ results[d].first_name);
-	    	}
+	 			fullNames.push(results[d].last_name +', '+ results[d].first_name);
+	    } //for fullNames.push
 
-	    	var randomShuff = shuffle(fullNames);
+	 $(".runDescSeats").on('click', function() {
+	 	var d, k;
 
-	    	$(".runRandomPart").on('click', function() {
-				// if(i == randomShuff.length) i = 0;
-				// return $('.main').html(randomShuff[i++]);
-				console.log('========');
-				console.log(randomShuff);
-			});
+		for (d=desks.length - 1, k=0; d>=0, k<fullNames.length; d--, k++) {
+	 	$(desks[d].html(fullNames[k]));
+	 	// console.log(desks[d]);
+	 	// console.log(fullNames[k]);
+	 	// //console.log(fullNames[e]);
 
+	 	//var e=fullNames.length - 1; e>=0; e--
+	 	//$("#ascStuD19").html('carlos');
+	 	}//for desks loop
+	 	
+	 	
+	 	
+	 	
 
-		}
-	});
+	});//runAscSeats
 
+	    }//results 
 
+});	//ajax
+
+$("#tdesk1").on('click', function() {
+$( this ).toggleClass('black-bg');
 });
+
+$("#tdesk2").on('click', function() {
+$( this ).toggleClass('black-bg');
+});
+
+$("#tdesk3").on('click', function() {
+$( this ).toggleClass('black-bg');
+});
+
+$("#tdesk4").on('click', function() {
+$( this ).toggleClass('black-bg');
+});
+
+$("#tdesk5").on('click', function() {
+$( this ).toggleClass('black-bg');
+});
+
+$("#tdesk6").on('click', function() {
+$( this ).toggleClass('black-bg');
+});
+
+$("#tdesk7").on('click', function() {
+$( this ).toggleClass('black-bg');
+});
+
+$("#tdesk8").on('click', function() {
+$( this ).toggleClass('black-bg');
+});
+
+$("#tdesk9").on('click', function() {
+$( this ).toggleClass('black-bg');
+});
+
+$("#tdesk10").on('click', function() {
+$( this ).toggleClass('black-bg');
+});
+
+$("#tdesk11").on('click', function() {
+$( this ).toggleClass('black-bg');
+});
+
+$("#tdesk12").on('click', function() {
+$( this ).toggleClass('black-bg');
+});
+
+});//document

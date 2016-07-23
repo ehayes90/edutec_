@@ -1,16 +1,40 @@
 /*Used to style information displayed on contact page*/
 #h1Contact{
 	text-align: center;
+	width: 
 }
-
-#inputC1{
+#JumboContact{
+	padding-bottom: 0%;
+}
+#exampleInputEmail{
+	width: 75%;
 	text-align: center;
-	margin: 0 auto;
 	display: inline-block;
+	align-content: center;
+	
 }
 
-#inputC2{
-	height: 100px !important;
-	width: 400px;
+#exampleInputName1{
+	width: 75%;
+	text-align: center;
 	display: inline-block;
+	align-content: center;
+	
+}
+#inputBoxC{
+	width: 75%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+    text-align: center;
+}
+#subBut{
+	margin:4%;
+	align-items: center;
+	width: 14%;
+
 }
