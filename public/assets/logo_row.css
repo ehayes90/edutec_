@@ -2,10 +2,10 @@
 
 
 #h1Header{
-	/*margin-top: 100px;*/ /*Only needed if we have fixed topheader*/
-	font-weight: bold;
-	text-align: center;
-	font-size: 24px;
+    /*margin-top: 100px;*/ /*Only needed if we have fixed topheader*/
+    font-weight: bold;
+    text-align: center;
+    font-size: 24px;
 }
 
 .logoOnly {
@@ -13,10 +13,18 @@
     text-align: center;
     background-color: #ffd777;
     border-bottom: 1px solid #c9aa5f;
+
+}
 }
 
 .logoImg {
-	margin-right: auto;
-	margin-left: auto;
-	float: left;
+    margin-right: auto;
+    margin-left: auto;
+    float: left;
 }
+.circular-image {
+
+  border-radius:  10%;
+
+
+  }
