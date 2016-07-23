@@ -67,51 +67,51 @@ $.ajax({
 });	//ajax
 
 $("#tdesk1").on('click', function() {
-$( this ).toggleClass('black-bg');
+$( this ).toggleClass('green-bg');
 });
 
 $("#tdesk2").on('click', function() {
-$( this ).toggleClass('black-bg');
+$( this ).toggleClass('green-bg');
 });
 
 $("#tdesk3").on('click', function() {
-$( this ).toggleClass('black-bg');
+$( this ).toggleClass('green-bg');
 });
 
 $("#tdesk4").on('click', function() {
-$( this ).toggleClass('black-bg');
+$( this ).toggleClass('green-bg');
 });
 
 $("#tdesk5").on('click', function() {
-$( this ).toggleClass('black-bg');
+$( this ).toggleClass('green-bg');
 });
 
 $("#tdesk6").on('click', function() {
-$( this ).toggleClass('black-bg');
+$( this ).toggleClass('green-bg');
 });
 
 $("#tdesk7").on('click', function() {
-$( this ).toggleClass('black-bg');
+$( this ).toggleClass('green-bg');
 });
 
 $("#tdesk8").on('click', function() {
-$( this ).toggleClass('black-bg');
+$( this ).toggleClass('green-bg');
 });
 
 $("#tdesk9").on('click', function() {
-$( this ).toggleClass('black-bg');
+$( this ).toggleClass('green-bg');
 });
 
 $("#tdesk10").on('click', function() {
-$( this ).toggleClass('black-bg');
+$( this ).toggleClass('green-bg');
 });
 
 $("#tdesk11").on('click', function() {
-$( this ).toggleClass('black-bg');
+$( this ).toggleClass('green-bg');
 });
 
 $("#tdesk12").on('click', function() {
-$( this ).toggleClass('black-bg');
+$( this ).toggleClass('green-bg');
 });
 
 
