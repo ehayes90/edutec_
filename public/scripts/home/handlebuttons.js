@@ -43,13 +43,13 @@ $(document).ready (function() {
 	});
 
 	$("#loginButton").on("click", function(){
-		window.location.href="/register";
+		window.location.href="/login";
 
 		return false;
 	});
 
 	$("#registerButton").on("click", function(){
-		window.location.href="/login";
+		window.location.href="/register";
 
 		return false;
 	});

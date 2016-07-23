@@ -2,7 +2,7 @@ var express = require('express');
 var exphbs = require('express-handlebars');
 
 var app = express();
-app.engine('handlebars', exphbs({defaultLayout: 'main'}));
+app.engine('handlebars', exphbs({defaultLayout: 'primary'}));
 app.set('view engine', 'handlebars');
 
 // Calls Database Connection .. For node console testing only, to be removed later.
@@ -76,6 +76,10 @@ app.get('/faq', function(req, res){
 
 app.get('/about', function(req, res){
 	res.render('about');
+});
+
+app.get('/seattest', function(req, res){
+	res.render('seat_test');
 });
 
 // Listens to port on local server and on Heroku

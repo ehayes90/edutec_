@@ -7,13 +7,16 @@
 }
 
 .studentDesks{
-	-moz-border-radius:28px;
-	-webkit-border-radius:28px;
-	border-radius:10px;
-	border:1px solid #79ADDC;
+/*	-moz-border-radius:28px;
+	-webkit-border-radius:28px;*/
+	/*border-radius:10px;*/
+	/*border:1px solid #79ADDC;*/
 	display: inline-block;
 	cursor:pointer;
-	background-color:#BF70C9;
+	/*background-color:#BF70C9;*/
 	font-size:17px;
 }
-   
+
+.studentDesks:hover {
+	box-shadow: 2px 2px 2px black;
+}

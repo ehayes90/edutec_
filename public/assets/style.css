@@ -1,18 +1,19 @@
 body {
-	padding: 0;
-	margin: 0;
+    padding: 0;
+    margin: 0;
 }
 
 h1, h2, h3, h4, h5, h6, p {
-	padding: 0;
-	margin: 0;
+    padding: 0;
+    margin: 0;
 }
 
 button:focus {
-	outline: 0;
+    outline: 0;
 }
 
 .btn:focus {
+
 	outline: 0;
 }
 
@@ -63,11 +64,20 @@ button:focus {
 #black-bg {
     background: #ffd777;
     border-bottom:1px solid #c9aa5f;
+
+    outline: 0;
+
 }
 
 .row {
   width: 100%;
 }
+
+
+.black-bg {
+    display: block;
+}
+
 
 .black-bg {
     display: block;
