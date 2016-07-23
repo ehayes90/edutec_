@@ -51,8 +51,8 @@ $.ajax({
 	 $(".runAscSeats").on('click', function() {
 	 	for (var d=e=0; d<desks.length && e<fullNames.length; d++, e++) {
 	 	$(desks[d].html(fullNames[e]));
-	 	console.log(desks[d]);
-	 	console.log(fullNames[e]);
+	 	// console.log(desks[d]);
+	 	// console.log(fullNames[e]);
 	 	//$("#ascStuD19").html('carlos');
 	 	}//for desks loop
 	 	
