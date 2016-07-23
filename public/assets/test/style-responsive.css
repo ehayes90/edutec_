@@ -249,6 +249,10 @@
         border-color:#ccc ;
     }
 
+    .sidebar {
+        height: auto;
+    }
+
 }
 
 @media (max-width:320px) {
